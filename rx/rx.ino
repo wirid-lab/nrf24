@@ -21,13 +21,15 @@ void recvData()
 {
   if ( radio.available() ) {
     radio.read(&data, sizeof(MyData));
+  Serial.print("Humidity: ");
+  Serial.print(data.h);
+  Serial.print("Temperature: ");
+  Serial.print(data.t);
     }
 }
 void loop()
 {
   recvData();
-  Serial.print("Humidity: ");
-  Serial.print(data.h);
-  Serial.print("Temperature: ");
-  Serial.print(data.t);
+  delay(1000);
+
 }
