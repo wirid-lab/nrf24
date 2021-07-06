@@ -34,5 +34,5 @@ void loop()
   Serial.print("Temperature: ");
   Serial.print(data.t);
   radio.write(&data, sizeof(MyData));
-  delay(1000);
+  delay(5000);
 }
