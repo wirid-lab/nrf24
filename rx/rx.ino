@@ -21,7 +21,7 @@ void recvData()
 {
   if ( radio.available() ) {
     radio.read(&data, sizeof(MyData));
-  Serial.println("{\"temp\":"+String(data.t)+",\"hum\":"+String(data.h)+"}")
+  Serial.println("{\"temp\":"+String(data.t)+",\"hum\":"+String(data.h)+"}");
     }
 }
 void loop()
