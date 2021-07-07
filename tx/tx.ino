@@ -30,9 +30,9 @@ void loop()
     return;
   }
   Serial.print("Humidity: ");
-  Serial.print(data.h);
+  Serial.println(data.h);
   Serial.print("Temperature: ");
-  Serial.print(data.t);
+  Serial.println(data.t);
   radio.write(&data, sizeof(MyData));
   delay(5000);
 }
