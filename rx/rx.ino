@@ -27,6 +27,7 @@ void recvData()
 void loop()
 {
   recvData();
+  delay(1000);
   
 
 }
